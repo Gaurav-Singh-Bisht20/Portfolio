@@ -269,6 +269,12 @@ i:hover {
     border-radius: 4px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
 @media (max-width:768px) {
     .main{
         max-width: 660px;
@@ -281,6 +287,17 @@ i:hover {
         height: 550px;
         border-radius: 16px;
         overflow: hidden;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
     .header{
         max-width: 660px;

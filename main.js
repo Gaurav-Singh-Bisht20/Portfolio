@@ -19,3 +19,12 @@ function sendEmail() {
         alert('Failed to send email. Please try again.');
       });
   }
+
+  document.getElementById('hamburger').onclick = function() {
+    var navMenu = document.getElementById('navMenu');
+    if (navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+    } else {
+        navMenu.style.display = 'flex';
+    }
+};
