@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
+    scroll-behavior: smooth;
   }
 
   .header{
@@ -13,6 +14,10 @@
     align-items: center;
     margin: 24px auto;
     max-width: 1200px;
+}
+
+.header a{
+    text-decoration-line: none;
 }
 
 nav{
@@ -36,8 +41,8 @@ nav{
 }
 
 .imgcontainer{
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 550px;
     border-radius: 16px;
     overflow: hidden;
 }
@@ -153,4 +158,136 @@ i:hover {
 .project-link{
     display: flex;
     gap: 32px;
+}
+
+.skills-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 64px auto;
+    padding: 20px;
+    background-color: #121111;
+    border-radius: 8px;
+}
+.skills-section h3{
+    font-size: 32px;
+    text-align: center;
+    background-color: #121111;
+    
+}
+.skills{
+    display: flex;
+    max-width: 1200px;
+    margin: 32px auto;
+    flex-wrap: wrap;
+    column-gap: 96px;
+    row-gap: 48px;
+    background-color: #121111;
+}
+
+.skills img{
+    max-width: 64px;
+    background-color: #121111;
+}
+
+.skills .express{
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.connect{
+    max-width: 1200px;
+    margin:64px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.connect h3{
+    font-size: 36px;
+    margin-block: 16px ;
+}
+
+.connect p{
+    font-size: 20px;
+    margin-block: 8px ;
+}
+
+
+.connect a{
+    text-decoration-line: none;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+}
+
+.form-container form{
+    width: 100%;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;  
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 8px 8px;
+    background-color: #121111;
+    border-radius: 4px;
+}
+
+.input-container textarea{
+    border: none;
+    outline: none;
+    padding: 8px 8px;
+    background-color: #121111;
+    border-radius: 4px;
+}
+
+.footer{
+    max-width: 1200px;
+    margin-inline:  auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+
+@media (max-width:768px) {
+    .main{
+        flex-direction: column;
+        gap: 32px;
+        
+    }
+    .imgcontainer{
+        width: 550px;
+        height: 550px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .header{
+        margin: 24px 116px;
+    }    
+    .projectDetail{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .projectDetail .project-desciption{
+        width: 100%;
+    }
+    .projectDetail .project-img{
+        width: 100%;
+    }
+    .connect{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }
