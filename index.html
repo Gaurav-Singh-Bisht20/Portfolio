@@ -6,13 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "-AH26UpgvCPf0Fsht",
+      });
+    })();
+</script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="header">
         <h3 class='name'>Gaurav Singh</h3>
         <nav>
-        <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#project">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
         </nav>
     </header>
     <main class='main'>
@@ -127,9 +137,9 @@
   </div>
     </section>
     <section class="connect" id="contact">
-      <div>
+      <div class="contact-desc">
         <h3>LET'S CONNECT</h3>
-        <p>say hello  at <a href="mailto:gauravsinghcse2024@gmail.com">gauravsinghcse2024@gmail.com</a> <br>for more info, here is my <a href="./assets/GAURAV SINGH RESUME.docx" download>resume</a></p>
+        <p>say hello at <a href="mailto:gauravsinghcse2024@gmail.com">gauravsinghcse2024@gmail.com</a> <br>for more info, here is my <a href="./assets/GAURAV SINGH RESUME.docx" download>resume</a></p>
         <div class="social">
         <a href="https://www.linkedin.com/in/gauravsingh2000/" target="_blank" rel="noopener noreferrer" class="icon linkedin">
           <i class="fa-brands fa-linkedin icon linkedin"></i>
@@ -139,25 +149,26 @@
         </a>
       </div>
       </div>
-      <form action="" class="form-container">
+      <form id="contact-form" class="form-container">
           <div class="input-container">
             <label for="name">Name</label>
-            <input type="text" id="name">
+            <input type="text" id="name" name="name">
           </div>
           <div class="input-container">
             <label for="email">Email</label>
-            <input type="email" id="email">
+            <input type="email" id="email" name="email">
           </div>
           <div class="input-container">
             <label for="subject">Subject</label>
-            <input type="text" id="subject">
+            <input type="text" id="subject" name="subject">
           </div>
           <div class="input-container">
            <label for="message">Message</label>
-           <textarea  id="message"></textarea>
+           <textarea id="message" name="message"></textarea>
           </div>
+          <button type="button" class="submit-btn" onclick="sendEmail()">Submit</button>
       </form>
-    </section>
+    </section>   
     <footer class="footer">
       <p> &#169;2024 Gaurav Singh</p>
     </footer>
