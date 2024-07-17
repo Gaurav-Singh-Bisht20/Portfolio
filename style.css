@@ -311,8 +311,10 @@ i:hover {
         align-items: end;
     }
     .header{
-        max-width: 660px;
-        
+        max-width: 90%;
+        align-items: center;
+        justify-self: center;
+        margin-inline: auto;
     }  
     .projectDetail{
         flex-direction: column;
