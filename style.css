@@ -279,8 +279,7 @@ i:hover {
     .main{
         max-width: 660px;
         flex-direction: column;
-        gap: 32px;
-        
+        gap: 32px;   
     }
     .imgcontainer{
         width: 550px;
@@ -289,19 +288,32 @@ i:hover {
         overflow: hidden;
     }
     
-    .hamburger {
-        display: block;
-    }
-
-    nav {
+    .header nav {
         display: none;
         flex-direction: column;
         width: 100%;
-        text-align: center;
+        align-items: flex-end;
+    }
+    
+    .header nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-bottom: 32px;
+    }
+    .hamburger-container nav.active{
+        position: absolute;
+        width: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
     }
     .header{
         max-width: 660px;
-    }    
+        
+    }  
     .projectDetail{
         flex-direction: column;
         gap: 32px;

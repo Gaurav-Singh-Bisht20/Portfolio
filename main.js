@@ -22,9 +22,5 @@ function sendEmail() {
 
   document.getElementById('hamburger').onclick = function() {
     var navMenu = document.getElementById('navMenu');
-    if (navMenu.style.display === 'flex') {
-        navMenu.style.display = 'none';
-    } else {
-        navMenu.style.display = 'flex';
-    }
+    navMenu.classList.toggle('active');
 };
